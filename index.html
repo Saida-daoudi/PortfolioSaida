@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <title>Portfolio Saida</title>
+</head>
+<body>
+    <div class="container">
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name">SAIDA</p>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="#home" class="nav-link active-link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#skills" class="nav-link">Skills</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#experience" class="nav-link">Experience</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#education" class="nav-link">Education</a>
+                        <div class="circle"></div>
+                    </li>
+
+                    <li class="nav_list">
+                        <a href="#contact" class="nav-link">Contact</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn"><a href="assets/images/cv_saida.pdf">Download CV</a> <i
+                        class="uil uil-file-alt"></i></button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+        <main class="wrapper">
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+                    <div class="featured-name">
+                        <p>I'm <span class="typedText"></span></p>
+                        <script>
+                            document.addEventListener("DOMContentLoaded", function () {
+                                var typingEffect = new Typed(".typedText", {
+                                    strings: ["Developer", "Designer", "Data Scientist", "Freelancer", "Intelligence Artificielle"],
+                                    loop: true,
+                                    typeSpeed: 100,
+                                    backSpeed: 80,
+                                    backDelay: 2000,
+                                });
+                            });
+                        </script>
+
+                    </div>
+                    <div class="featured-text-info">
+                        <p>Hi! I’m Saida ED-Daoudi, a Full Stack Developer skilled in front-end and back-end
+                            development. I have
+                            experience with HTML,
+                            CSS, React, PHP, Laravel, MySQL, and MongoDB. Let's create something amazing together!
+                        </p>
+                    </div>
+                    <div class="featured-text-btn">
+                        <a class="btn blue-btn" href="#about">Hire Me</a>
+                        <button class="btn"><a href="assets/images/CV_Saida.pdf">Download CV</a> <i
+                                class="uil uil-file-alt"></i></button>
+                    </div>
+                    <div class="social_icons">
+                        <div class="icon"><i class="uil uil-instagram"></i></div>
+                        <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+                        <div class="icon"><i class="uil uil-dribbble"></i></div>
+                        <div class="icon"><i class="uil uil-github-alt"></i></div>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <div class="image">
+                        <img src="assets/images/me.png" alt="avatar">
+                    </div>
+                </div>
+
+            </section>
+            <section class="section" id="skills">
+                <div class="skills-block">
+                    <div class="top-header">
+                        <h1>Skills</h1>
+                        <span>Professional experience</span>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item"><i class="fa-brands fa-html5" style="color: #dd0303;"></i>
+                            <h5>HTML5</h5>
+                            <p>Structuring responsive web pages.</p>
+                        </div>
+                        <div class="skill-item"><i class="fa-brands fa-css3-alt" style="color:#264de4;"></i>
+                            <h5>CSS3</h5>
+                            <p>Styling modern and responsive interfaces.</p>
+                        </div>
+                        <div class="skill-item"><i class="fa-brands fa-js-square" style="color:#f0db4f;"></i>
+                            <h5>JavaScript</h5>
+                            <p>Interactive and dynamic web features.</p>
+                        </div>
+                        <div class="skill-item"><i class="fa-brands fa-react" style="color:#61dafb;"></i>
+                            <h5>React</h5>
+                            <p>Single-page applications development.</p>
+                        </div>
+                        <div class="skill-item"><i class="fa-brands fa-php" style="color:#777bb3;"></i>
+                            <h5>PHP / Laravel</h5>
+                            <p>Server-side scripting & frameworks.</p>
+                        </div>
+                        <div class="skill-item"><i class="fa-solid fa-database" style="color:#f29111;"></i>
+                            <h5>MySQL / Databases</h5>
+                            <p>Database design and management.</p>
+                        </div>
+                        <div class="skill-item"><i class="fa-brands fa-node-js" style="color:#3c873a;"></i>
+                            <h5>Node.js</h5>
+                            <p>Backend JavaScript runtime environment.</p>
+                        </div>
+                        <div class="skill-item"><i class="fa-brands fa-git-alt" style="color:#f34f29;"></i>
+                            <h5>Git / GitHub</h5>
+                            <p>Version control & collaboration.</p>
+                        </div>
+                        <div class="skill-item"><i class="fa-brands fa-bootstrap" style="color:#7952b3;"></i>
+                            <h5>Bootstrap</h5>
+                            <p>Responsive UI frameworks.</p>
+                        </div>
+                        <div class="skill-item"><i class="fa-brands fa-python" style="color:#306998;"></i>
+                            <h5>Python</h5>
+                            <p>Data analysis & scripting.</p>
+                        </div>
+                        <div class="skill-item"><i class="fa-brands fa-vuejs" style="color:#42b883;"></i>
+                            <h5>Vue.js</h5>
+                            <p>Frontend reactive framework.</p>
+                        </div>
+                        <div class="skill-item"><i class="fa-solid fa-server" style="color:#6c757d;"></i>
+                            <h5>Express.js</h5>
+                            <p>Node.js web application framework.</p>
+                        </div>
+                        <div class="skill-item"><i class="fa-solid fa-terminal" style="color:#4caf50;"></i>
+                            <h5>Command Line</h5>
+                            <p>Efficient project navigation and scripting.</p>
+                        </div>
+                        <div class="skill-item"><i class="fa-solid fa-code" style="color:#ff5722;"></i>
+                            <h5>Algorithms</h5>
+                            <p>Problem solving & optimization techniques.</p>
+                        </div>
+                        <div class="skill-item"><i class="fa-solid fa-cloud" style="color:#2196f3;"></i>
+                            <h5>Cloud Computing</h5>
+                            <p>Deployment & scalable applications.</p>
+                        </div>
+
+                        <div class="skill-item"><i class="fa-solid fa-lightbulb" style="color:#ffc107;"></i>
+                            <h5>Creativity</h5>
+                            <p>Innovative ideas and problem solving.</p>
+                        </div>
+                        <div class="skill-item"><i class="fa-solid fa-users" style="color:#17a2b8;"></i>
+                            <h5>Teamwork</h5>
+                            <p>Collaborating effectively with others.</p>
+                        </div>
+                        <div class="skill-item"><i class="fa-solid fa-comments" style="color:#28a745;"></i>
+                            <h5>Communication</h5>
+                            <p>Clear and concise exchange of ideas.</p>
+                        </div>
+                        <div class="skill-item"><i class="fa-solid fa-brain" style="color:#6f42c1;"></i>
+                            <h5>Critical Thinking</h5>
+                            <p>Analyzing and evaluating effectively.</p>
+                        </div>
+                        <div class="skill-item"><i class="fa-solid fa-tasks" style="color:#fd7e14;"></i>
+                            <h5>Time Management</h5>
+                            <p>Efficient task planning and execution.</p>
+                        </div>
+                        <div class="skill-item"><i class="fa-solid fa-user-graduate" style="color:#20c997;"></i>
+                            <h5>Adaptability</h5>
+                            <p>Adjusting to changing environments quickly.</p>
+                        </div>
+                        <div class="skill-item"><i class="fa-solid fa-handshake" style="color:#007bff;"></i>
+                            <h5>Leadership</h5>
+                            <p>Guiding teams towards goals effectively.</p>
+                        </div>
+                        <div class="skill-item"><i class="fa-solid fa-user-check" style="color:#dc3545;"></i>
+                            <h5>Problem Solving</h5>
+                            <p>Finding solutions efficiently under pressure.</p>
+                        </div>
+                        <div class="skill-item"><i class="fa-solid fa-hand-paper" style="color:#6610f2;"></i>
+                            <h5>Conflict Resolution</h5>
+                            <p>Managing disagreements constructively.</p>
+                        </div>
+                        <div class="skill-item"><i class="fa-solid fa-clock" style="color:#fd7e14;"></i>
+                            <h5>Self-Discipline</h5>
+                            <p>Maintaining focus and consistent work ethic.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="s1"></div>
+            <section class="section s1" id="projects">
+                <div class="project-container">
+                    <div class="project-box portfolio__item"><img src="assets/images/react.png" class="imgg"
+                            alt="React Project">
+                        <div class="portfolio__hover">
+                            <h3 class="portfolio__title">React Project</h3>
+                        </div>
+                    </div>
+                    <div class="project-box portfolio__item"><img src="assets/images/Rido.png" class="imgg"
+                            alt="Rido Project">
+                        <div class="portfolio__hover">
+                            <h3 class="portfolio__title">Rido Project</h3>
+                        </div>
+                    </div>
+                    <div class="project-box portfolio__item"><img src="assets/images/Task.png" class="imgg"
+                            alt="Task Project">
+                        <div class="portfolio__hover">
+                            <h3 class="portfolio__title">Task Project</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-container">
+                    <div class="project-box portfolio__item"><img src="assets/images/Boutiq.png" class="imgg"
+                            alt="Boutiq Project">
+                        <div class="portfolio__hover">
+                            <h3 class="portfolio__title">Boutique Project</h3>
+                        </div>
+                    </div>
+                    <div class="project-box portfolio__item"><img src="assets/images/post.png" class="imgg"
+                            alt="Post Project">
+                        <div class="portfolio__hover">
+                            <h3 class="portfolio__title">Post Project</h3>
+                        </div>
+                    </div>
+                    <div class="project-box portfolio__item"><img src="assets/images/login.png" class="imgg"
+                            alt="Login Project">
+                        <div class="portfolio__hover">
+                            <h3 class="portfolio__title">Login Project</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="education">
+                <div class="top-header">
+                    <h1>Education</h1>
+                    <span>Learning journey</span>
+                </div>
+
+                <div class="pro-list">
+                    <div class="pro-item">
+                        <div class="pro-left">
+                            <span class="pro-date">2021 – 2024</span>
+                        </div>
+                        <div class="pro-right">
+                            <h3>Licence – Intelligence Artificielle & Science des Données</h3>
+                            <p class="pro-place">École Supérieure de Technologie (EST), Essaouira</p>
+                            <p class="pro-desc">
+                                Academic training focused on Artificial Intelligence, Data Science,
+                                algorithms, statistics, and data analysis with practical applications.
+                            </p>
+                            <div class="career-tags">
+                                <span>Artificial Intelligence</span>
+                                <span>Data Science</span>
+                                <span>Machine Learning</span>
+                                <span>Python</span>
+                                <span>Statistics</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pro-item">
+                        <div class="pro-left">
+                            <span class="pro-date">2023 – 2025</span>
+                        </div>
+                        <div class="pro-right">
+                            <h3>Digital Development – Full Stack</h3>
+                            <p class="pro-place">Institut Spécialisé en Technologie Appliquée (OFPPT)</p>
+                            <p class="pro-desc">
+                                Hands-on training in Full Stack development covering React, Laravel,
+                                APIs, databases, Git, and real-world projects.
+                            </p>
+                            <div class="career-tags">
+                                <span>React</span>
+                                <span>Laravel</span>
+                                <span>REST APIs</span>
+                                <span>MySQL</span>
+                                <span>Git & GitHub</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pro-item">
+                        <div class="pro-left">
+                            <span class="pro-date">2023</span>
+                        </div>
+                        <div class="pro-right">
+                            <h3>Baccalaureate – Physical Sciences (French Option)</h3>
+                            <p class="pro-place">Lycée Les Almoravides</p>
+                            <p class="pro-desc">
+                                Strong analytical background with focus on mathematics, physics,
+                                and problem-solving skills.
+                            </p>
+                            <div class="career-tags">
+                                <span>Mathematics</span>
+                                <span>Physics</span>
+                                <span>Analytical Thinking</span>
+                                <span>Problem Solving</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="section experience" id="experience">
+                <div class="top-header">
+                    <h1>Experience</h1>
+                    <span>Professional experience</span>
+                </div>
+
+                <div class="timeline">
+
+                    <div class="pro-item">
+                        <div class="pro-left">
+                            <span class="pro-date">2024</span>
+                        </div>
+                        <div class="pro-right">
+                            <h3>Full Stack Developer Intern</h3>
+                            <p class="pro-place">ANAPEC</p>
+                            <p class="pro-desc">
+                                Designed and developed a stock management platform using Laravel API
+                                and React. Implemented authentication, dashboards, and data workflows.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pro-item">
+                        <div class="pro-left">
+                            <span class="pro-date">2023 — 2024</span>
+                        </div>
+                        <div class="pro-right">
+                            <h3>Backend Developer</h3>
+                            <p class="pro-place">Academic & Personal Projects</p>
+                            <p class="pro-desc">
+                                Built RESTful services with Node.js, Express, Python, and PHP.
+                                Managed databases and backend architecture.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="pro-item">
+                        <div class="pro-left">
+                            <span class="pro-date">2023</span>
+                        </div>
+                        <div class="pro-right">
+                            <h3>Web Developer · Freelance</h3>
+                            <p class="pro-place">Remote</p>
+                            <p class="pro-desc">
+                                Delivered responsive websites with focus on usability, performance,
+                                and clean UI implementation.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+
+
+
+
+            <div class="s1"></div>
+
+            <section class="section" id="contact">
+                <div class="top-headerr">
+                    <h1>Get in touch</h1><span>Do you have a project in your mind, contact me here</span>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="contact-info">
+                            <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                            <p><i class="uil uil-envelope"></i> Email: saidadaoudi2005@gmail.com</p>
+                            <p><i class="uil uil-phone"></i> Tel: +212 762327949</p>
+                            <p><i class="uil uil-map-marker"></i> Casablanca, Morocco</p>
+                            <p><strong>Available for:</strong> Full-time, Freelance, Remote</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-control">
+                            <div class="form-inputs"><input type="text" id="name" class="input-field"
+                                    placeholder="Name"><input type="email" id="email" class="input-field"
+                                    placeholder="Email"></div>
+                            <div class="text-area"><textarea id="message" placeholder="Message"></textarea></div>
+                            <div class="form-button"><button class="btn" id="sendBtn">Send <i
+                                        class="uil uil-message"></i></button></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script>
+        const navLinks = document.querySelectorAll('.nav-link');
+        const sections = ['home', 'skills', 'projects', 'education', 'experience', 'contact'];
+
+        function showSection(id) {
+            sections.forEach(s => {
+                const el = document.getElementById(s);
+                if (el) el.style.display = (s === id ? '' : 'none');
+            });
+            navLinks.forEach(link => link.classList.toggle('active-link', link.getAttribute('href') === '#' + id));
+            document.querySelector('.wrapper').scrollTop = 0;
+        }
+
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = link.getAttribute('href').replace('#', '');
+                showSection(target);
+            });
+        });
+
+        document.addEventListener('click', (e) => {
+            const btn = e.target.closest('[data-target]');
+            if (btn) {
+                const tgt = btn.getAttribute('data-target');
+                showSection(tgt);
+            }
+        });
+
+        showSection('home');
+
+        document.getElementById('sendBtn')?.addEventListener('click', () => {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            if (!name || !email || !message) { alert('Please complete all fields.'); return }
+            alert('Thanks, ' + name + "! I'll get back to you soon.");
+            document.getElementById('name').value = ''; document.getElementById('email').value = ''; document.getElementById('message').value = '';
+        });
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
